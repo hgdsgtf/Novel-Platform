@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+html::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) no-repeat;
+}
+
+::selection {
+    color: #fff;
+    background-color: rgb(144, 129, 241);
+}
+
+.box {
+    display: flex;
+    overflow: hidden;
+    width: 90rem; /* 整个盒子的宽度 */
+    height: 55rem; /* 整个盒子的高度 */
+    background-color: rgba(255, 255, 255, 60%);
+    border-radius: 1.5rem;
+    margin: 10% auto;
+    box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 10%);
+}
+
+.box .left {
+    position: relative;
+    width: 31.5rem; /* 左侧背景图片的宽度 */
+    height: 55rem; /* 左侧背景图片的高度 */
+    background-color: skyblue;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.box .left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/login.jpg'); /* 确保路径正确 */
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.box .right {
+    display: flex;
+    flex-direction: column;
+    width: 58.5rem; /* 右侧内容的宽度 */
+    align-items: center;
+    background-color: #f6f9fc;
+    border-radius: 0 1.5rem 1.5rem 0;
+    text-align: center;
+    padding: 5rem;
+}
+
+.box .right h4 {
+    color: rgb(144, 129, 241);
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.box .right p {
+    color: rgb(100, 100, 100);
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.submit {
+    width: 15rem; /* 按钮的宽度 */
+    height: 4rem; /* 按钮的高度 */
+    color: #f6f6f6;
+    background-color: rgba(144, 129, 241, 0.8);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    box-shadow: 0 0.9rem 1.6rem rgba(0, 0, 0, 0.15);
+}
+
+.submit:active {
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: rgb(36, 16, 165);
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 3rem auto;
+    width: 47rem; /* 输入框的宽度 */
+    height: 0.01rem; /* 输入框的高度 */
+    justify-content: center;
+}
+
+.inputField {
+    width: 100%; /* 输入框的宽度 */
+    height: 50%; /* 输入框的高度 */
+    padding: 2.4rem;
+    border-radius: 2rem;
+    border: 0.1rem solid #ccc;
+    transition: border-color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.inputField:focus {
+    border-color: rgb(144, 129, 241);
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 2rem;
+    top: 60%; /* 调整上边距 */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(86, 60, 234); /* 深一点的颜色 */
+    font-size: 1.5rem; /* 大一点的字号 */
+}
+
+
+
+
+
