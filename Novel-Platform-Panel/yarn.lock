@@ -740,11 +740,6 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@kurkle/color@^0.3.0":
-  version "0.3.2"
-  resolved "https://registry.npmmirror.com/@kurkle/color/-/color-0.3.2.tgz#5acd38242e8bde4f9986e7913c8fdf49d3aa199f"
-  integrity sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw==
-
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.5"
   resolved "https://registry.npmmirror.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.5.tgz#4fc56c15c580b9adb7dc3c333a134e540b44bfb1"
@@ -1523,13 +1518,6 @@
   version "1.2.7"
   resolved "https://registry.npmmirror.com/@types/range-parser/-/range-parser-1.2.7.tgz#50ae4353eaaddc04044279812f52c8c65857dbcb"
   integrity sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==
-
-"@types/react-chartjs-2@^2.5.7":
-  version "2.5.7"
-  resolved "https://registry.npmmirror.com/@types/react-chartjs-2/-/react-chartjs-2-2.5.7.tgz#b77406f6eb6a9f38438966fb27d8cfb1bb7425d3"
-  integrity sha512-waqYqiNULIVUqaKO7MGUpFmWrVtH7gVPOzqwV4y4zgUyu/JiDwC005PpveO442HKnby9kLgp3t1SB2sld+ACLw==
-  dependencies:
-    react-chartjs-2 "*"
 
 "@types/react-dom@^17.0.9":
   version "17.0.25"
@@ -2598,13 +2586,6 @@ chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
-
-chart.js@^4.4.3:
-  version "4.4.3"
-  resolved "https://registry.npmmirror.com/chart.js/-/chart.js-4.4.3.tgz#3b2e11e7010fefa99b07d0349236f5098e5226ad"
-  integrity sha512-qK1gkGSRYcJzqrrzdR6a+I0vQ4/R+SoODXyAjscQ/4mzuNzySaMCd+hyVxitSY1+L2fjPD1Gbn+ibNqRmwQeLw==
-  dependencies:
-    "@kurkle/color" "^0.3.0"
 
 chokidar@^3.4.2, chokidar@^3.5.3:
   version "3.6.0"
@@ -7425,11 +7406,6 @@ rcedit@^3.0.1:
   integrity sha512-WRlRdY1qZbu1L11DklT07KuHfRk42l0NFFJdaExELEu4fEQ982bP5Z6OWGPj/wLLIuKRQDCxZJGAwoFsxhZhNA==
   dependencies:
     cross-spawn-windows-exe "^1.1.0"
-
-react-chartjs-2@*, react-chartjs-2@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmmirror.com/react-chartjs-2/-/react-chartjs-2-5.2.0.tgz#43c1e3549071c00a1a083ecbd26c1ad34d385f5d"
-  integrity sha512-98iN5aguJyVSxp5U3CblRLH67J8gkfyGNbiK3c+l1QI/G4irHMPQw44aEPmjVag+YKTyQ260NcF82GTQ3bdscA==
 
 react-click-outside@^3.0.1:
   version "3.0.1"

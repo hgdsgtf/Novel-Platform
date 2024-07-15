@@ -1,0 +1,125 @@
+:root {
+    --button-color: #8eaaff;
+    --button-fontSize: 10rem;
+    --button-width: 110%;
+    --paragraph-fontSize: 1.8rem;
+    --paragraph-color: black;
+    --header-fontSize: 3rem;
+    --header-color: #9081f1;
+}
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: black;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}
+.commentContainer {
+    border: 1px solid #e0e0e0; /* 边框颜色更浅 */
+    padding: 12px; /* 增加一点填充 */
+    margin: 5px ;
+    background: white;
+    border-radius: 10px; /* 更圆的边角 */
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    height : 40%;
+}
+
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentUser {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #FF69B4; /* 热粉色 */
+}
+
+.commentTime {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.commentAuthor {
+    color: red;
+    margin-left: 5px;
+}
+
+.commentContent {
+    margin: 10px 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.commentActionButton {
+    background: none;
+    border: none;
+    color: #FF69B4; /* 热粉色 */
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentActionButton:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.replyForm {
+    margin-top: 10px;
+    margin-left: 20px; /* 保持原有缩进 */
+}
+
+.textarea {
+    width: 100%; /* 保持宽度为100% */
+    padding: 12px; /* 增加填充 */
+    border: 1px solid #e0e0e0; /* 边框颜色更浅 */
+    border-radius: 20px; /* 更圆润的边角 */
+    font-size: 1.6rem; /* 增大字体 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    resize: none; /* 禁止调整大小 */
+}
+
+.submitButton {
+    padding: 10px 20px;
+    background-color: #FF69B4; /* 热粉色 */
+    color: white;
+    border: none;
+    border-radius: 20px; /* 使按钮更圆润 */
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    position: relative; /* 确保 position 已设置 */
+    z-index: 10; /* 设置较高的 z-index 值 */
+}
+
+.submitButton:hover {
+    background-color: white;
+    color: #FF69B4; /* 确保文本颜色在悬停时为白色 */
+}
+
+.commentReply {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px; /* 改为更圆的边角 */
+    background-color: #f9f9f9;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentRepliesContainer {
+    padding-left: 10px; /* 保持原有缩进 */
+}
+
+.commentReplies {
+    margin-left: 20px; /* 保持原有缩进 */
+}

@@ -1,0 +1,159 @@
+:root {
+    --button-color: #8eaaff;
+    --button-fontSize: 1.6rem; /* 调整为合理的按钮字体大小 */
+    --button-width: 100%; /* 调整按钮宽度 */
+    --paragraph-fontSize: 1.8rem;
+    --paragraph-color: #646464; /* 调整段落颜色为柔和的灰色 */
+    --header-fontSize: 2.5rem; /* 调整为合理的标题字体大小 */
+    --header-color: #9081f1;
+}
+
+.auditorViewNovelContainer {
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.novelContent {
+    background-color: #ffe4e1; /* 浅粉色背景 */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* 更圆润的边角 */
+}
+
+.writerReason {
+    background-color: #fffacd; /* 柔和的黄色背景 */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* 更圆润的边角 */
+}
+
+.firstCommit {
+    font-size: var(--paragraph-fontSize);
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff69b4; /* 热粉色 */
+}
+
+.errorMessage {
+    color: red;
+}
+
+.successMessage {
+    color: green;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.actionButton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 20px; /* 更圆润的按钮 */
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.actionButton:hover {
+    background-color: #FF69B4; /* 鼠标悬停时变为热粉色 */
+    color: white; /* 确保文本颜色在悬停时为白色 */
+}
+
+.commentSection {
+    margin-top: 10px;
+}
+
+.commentTextarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 77%;
+    min-height: 200px;
+    background-color: #ffe4e1; /* 浅粉色背景 */
+    border-radius: 10px; /* 更圆润的边角 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.submitButton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 20px; /* 更圆润的按钮 */
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.submitButton:hover {
+    background-color: #FF69B4; /* 鼠标悬停时变为热粉色 */
+    color: white; /* 确保文本颜色在悬停时为白色 */
+}
+
+.issuesHeader {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff69b4; /* 热粉色 */
+}
+
+.issuesList {
+    margin-bottom: 20px;
+}
+
+.filterSection {
+    margin-bottom: 20px;
+}
+
+.filterInputContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.filterInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px; /* 更圆润的边角 */
+    background-color: #ffe4e1; /* 浅粉色背景 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.filterButton {
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 10px; /* 更圆润的按钮 */
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.filterButton:hover {
+    background-color: white;
+    color: #FF69B4;
+}
+
+.contentSection {
+    margin-bottom: 20px;
+}
+
+.contentTextarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 40%;
+    min-height: 200px;
+    background-color: #ffe4e1; /* 浅粉色背景 */
+    border-radius: 10px; /* 更圆润的边角 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}

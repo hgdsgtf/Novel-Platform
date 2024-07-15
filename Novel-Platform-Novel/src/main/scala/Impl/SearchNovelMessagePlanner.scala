@@ -33,7 +33,7 @@ case class SearchNovelMessagePlanner(
   )(using planContext: PlanContext): IO[List[Json]] = {
     for {
       titlesJson <- readDBRows(
-        s"SELECT DISTINCT title FROM ${schemaName}.novel",
+        s"SELECT title FROM ${schemaName}.novel",
         List()
       )
       titles = titlesJson.flatMap { json =>

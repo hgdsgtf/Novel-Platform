@@ -1,0 +1,132 @@
+:root {
+    --button-color: #8eaaff;
+    --button-fontSize: 10rem;
+    --button-width: 110%;
+    --paragraph-fontSize: 1.6rem; /* 基础字体大小 */
+    --paragraph-color: #646464;
+    --header-fontSize: 3.5rem;
+    --header-color: #9081f1;
+    --font-increase: 0.5em;
+}
+
+.commentContainer {
+    border: none;
+    padding: 8px; /* 减小填充 */
+    margin: 4px 0; /* 减小外边距 */
+    background: white;
+    border-radius: 10px; /* 更圆的边角 */
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px; /* 减小底部外边距 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentUser {
+    font-weight: bold;
+    font-size: calc(var(--paragraph-fontSize) + 0.5em);
+    color: #FF69B4;
+}
+
+.commentTime {
+    font-size: calc(var(--paragraph-fontSize) - 0.5em);
+    color: #888;
+}
+
+.commentAuthor {
+    color: red;
+    margin-left: 5px;
+}
+
+.commentContent {
+    margin: 8px 0; /* 减小上下外边距 */
+    font-size: var(--paragraph-fontSize);
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; /* 减小间距 */
+}
+
+.commentActionButton {
+    background: none;
+    border: none;
+    color: #FF69B4; /* 热粉色 */
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentActionButton:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.replyForm {
+    margin-top: 8px; /* 减小上外边距 */
+    margin-left: 20px; /* 保持原有缩进 */
+}
+
+.replyTextarea {
+    width: 100%;
+    padding: 8px; /* 减小填充 */
+    border: 1px solid #e0e0e0; /* 边框颜色更浅 */
+    border-radius: 10px; /* 更圆的边角 */
+    font-size: var(--paragraph-fontSize); /* 增大字体 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.submitButton {
+    padding: 8px 16px; /* 减小填充 */
+    background-color: #FF69B4; /* 热粉色 */
+    color: white;
+    border: none;
+    border-radius: 20px; /* 更圆润的按钮 */
+    cursor: pointer;
+    margin-top: 8px; /* 减小上外边距 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    font-size: var(--paragraph-fontSize); /* 增大字体 */
+}
+
+.submitButton:hover {
+    background-color: #FF1493; /* 深粉色 */
+}
+
+.commentLikeIcon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/images/like_icon.png'); /* 替换为点赞图标的路径 */
+    background-size: cover;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.commentRoot {
+    margin-left: 0;
+    border: 1px solid #e0e0e0; /* 边框颜色更浅 */
+    padding: 8px; /* 减小填充 */
+    margin-bottom: 8px; /* 减小下外边距 */
+    border-radius: 10px; /* 更圆的边角 */
+    font-size: var(--paragraph-fontSize); /* 增大字体 */
+}
+
+.commentReply {
+    margin-left: 20px;
+    border-left: 1px solid #e0e0e0; /* 边框颜色更浅 */
+    padding-left: 10px;
+    margin-bottom: 8px; /* 减小下外边距 */
+    font-size: var(--paragraph-fontSize); /* 增大字体 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.commentReplies {
+    margin-left: 20px; /* 保持原有缩进 */
+}

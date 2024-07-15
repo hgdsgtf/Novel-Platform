@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --button-color:  #8eaaff;
+    --button-fontSize: 1.6rem;
+    --button-width: 100%;
+    --paragraph-fontSize: 1.8rem;
+    --paragraph-color: #646464;
+    --header-fontSize: 2rem;
+    --header-color: #9081f1;
+}
+
+.readerReadNovelContainer {
+    padding: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) no-repeat;
+    border-radius: 10px; /* 更圆润的边角 */
+}
+
+.title {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.subtitle {
+    font-size: var(--header-fontSize);
+    color: var(--paragraph-color);
+    margin-bottom: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.novelContent {
+    margin-top: 1rem;
+    font-size: var(--paragraph-fontSize);
+    line-height: 1.6;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.ratingButton {
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: var(--button-fontSize);
+    color: white;
+    background-color: var(--button-color); /* 添加背景颜色 */
+    width: 15%; /* 调整宽度 */
+}
+
+.ratingButton:hover {
+    background-color: #FF1493; /* 深粉色 */
+}
+
+.issueTextarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 77%;
+    min-height: 200px;
+    border-radius: 10px; /* 更圆润的边角 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.submitButton {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px; /* 更圆润的按钮 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    background-color: var(--button-color);
+    font-size: var(--button-fontSize);
+    width: 15%; /* 调整宽度 */
+}
+
+.submitButton:hover {
+    background-color: #FF1493; /* 深粉色 */
+}

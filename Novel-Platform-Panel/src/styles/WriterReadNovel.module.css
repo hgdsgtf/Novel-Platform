@@ -1,0 +1,57 @@
+/* WriterReadNovel.module.css */
+:root {
+    --button-color: #8eaaff; /* 保持按钮颜色不变 */
+    --button-fontSize: 1.6rem; /* 调整为合理的按钮字体大小 */
+    --button-width: 100%; /* 调整按钮宽度 */
+    --paragraph-fontSize: 1.8rem;
+    --paragraph-color: #646464; /* 调整段落颜色为柔和的灰色 */
+    --header-fontSize: 2.5rem; /* 调整为合理的标题字体大小 */
+    --header-color: #9081f1;
+}
+
+.writerReadNovelContainer {
+    padding: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) no-repeat;
+    border-radius: 10px; /* 更圆润的边角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--paragraph-color); /* 确保标题颜色与段落颜色一致 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.subtitle {
+    font-size: var(--header-fontSize);
+    margin-bottom: 1rem;
+    color: var(--paragraph-color); /* 确保副标题颜色与段落颜色一致 */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.novelContent {
+    margin-top: 1rem;
+    font-size: var(--paragraph-fontSize);
+    color: var(--paragraph-color);
+    line-height: 1.6;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.ratingButton, .updateButton {
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: var(--button-color);
+    border-radius: 10px; /* 圆润的按钮 */
+    font-size: var(--button-fontSize);
+    width: var(--button-width);
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.ratingButton:hover, .updateButton:hover {
+    background-color: white;
+    color: #FF69B4; /* 确保文本颜色在悬停时为白色 */
+}

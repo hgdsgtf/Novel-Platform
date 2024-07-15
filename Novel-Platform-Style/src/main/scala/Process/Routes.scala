@@ -49,6 +49,46 @@ object Routes:
           .flatMap { m =>
             m.fullPlan.map(_.asJson.toString)
           }
+      case "DeletePageStyleMessage" =>
+        IO(
+          decode[DeletePagesStyleMessagePlanner](str).getOrElse(
+            throw new Exception("Invalid JSON for DeletePagesStyleMessage")
+          )
+        )
+          .flatMap { m =>
+            m.fullPlan.map(_.asJson.toString)
+          }
+      case "SetPageStyleMessage" =>
+        IO(
+          decode[SetPageStyleMessagePlanner](str).getOrElse(
+            throw new Exception("Invalid JSON for SetPageStyleMessage")
+          )
+        ).flatMap { m =>
+          m.fullPlan.map(_.asJson.toString)
+        }
+      case "GetPageStyleMessage" =>
+        println(s"Received raw message: $str")  // 输出接收到的原始消息
+        IO(
+          decode[GetPageStyleMessagePlanner](str).getOrElse(
+            throw new Exception("Invalid JSON for GetPageStyleMessage")
+          )
+        ).flatMap { m =>
+          println(s"Received decoded message: $m")  // 输出解码后的消息
+          m.fullPlan.flatMap { jsonList =>
+            println(s"Full plan result: $jsonList")  // 输出 fullPlan 的结果
+            IO.pure(jsonList.asJson.noSpaces)
+          }
+        }
+
+      case "GetAllStylesMessage" =>
+        IO(
+          decode[GetAllStylesMessagePlanner](str).getOrElse(
+            throw new Exception("Invalid JSON for GetAllStylesMessage")
+          )
+        )
+          .flatMap { m =>
+            m.fullPlan.map(_.asJson.toString)
+          }
       case _ =>
         IO.raiseError(new Exception(s"Unknown type: $messageType"))
     }

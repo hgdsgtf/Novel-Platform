@@ -26,10 +26,8 @@ case class GetCommentMessagePlanner(novelTitle: String, commentId: Option[Int] =
       case None => params
     }
 
-    println(s"Executing query: $query with params: $finalParams") // 添加调试输出
 
     readDBRows(query, finalParams).flatMap { result =>
-      println(s"Query result: ${result.asJson.noSpaces}") // 添加调试输出
 
       val comments = result.map { row =>
         val id = row.hcursor.downField("id").as[Int].getOrElse(0)

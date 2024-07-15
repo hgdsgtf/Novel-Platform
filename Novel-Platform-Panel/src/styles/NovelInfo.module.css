@@ -1,0 +1,109 @@
+:root {
+    --button-color:#8eaaff;
+    --button-fontSize: 1rem;
+    --button-width: 100%;
+    --paragraph-fontSize: 1rem;
+    --paragraph-color: #000000;
+    --header-fontSize: 2rem;
+    --header-color: #000000;
+}
+
+.novelInfoContainer {
+    width: 100%;
+    height: 50vh;
+    padding: 20px;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) no-repeat;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: black;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}
+
+.subtitle, .author, .rating, .userRating {
+    font-size: var(--paragraph-fontSize);
+    color: var(--paragraph-color);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.chapterItem {
+    margin: 20px 0;
+    font-size: var(--paragraph-fontSize);
+    color: var(--paragraph-color);
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}
+
+.chapterAvailable {
+    color: darkgreen; /* Lime green for availability */
+}
+
+.chapterPending {
+    color: saddlebrown;
+}
+
+.readButton {
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #1E90FF; /* Dodger blue for read button */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}
+
+.chapterUpdated {
+    color: #FF4500; /* Orange red for updated chapters */
+}
+
+.noChapters {
+    font-size: var(--paragraph-fontSize);
+    color: #888;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}
+
+.backButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8eaaff; /* Light pink for a cute button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.resultTitle {
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--header-color);
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}
+
+.addButton {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #8eaaff; /* Light pink for a cute button */
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+    cursor: pointer;
+    z-index: 10;
+}
+.addButton:hover {
+    background-color: white;
+    color: #FF69B4; /* 确保文本颜色在悬停时为白色 */
+}
+.successMessage {
+    color: #32CD32; /* Lime green for success */
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}
+
+.errorMessage {
+    color: #FF4500; /* Orange red for errors */
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+}

@@ -131,15 +131,6 @@ object Routes:
           .flatMap { m =>
             m.fullPlan.map(_.asJson.toString)
           }
-      case "GetAuthorMessage" =>
-        IO(
-          decode[GetAuthorMessagePlanner](str).getOrElse(
-            throw new Exception("Invalid JSON for GetAuthorMessage")
-          )
-        )
-          .flatMap { m =>
-            m.fullPlan.map(_.asJson.toString)
-          }
       case "WriterUpdateNovelContentMessage" =>
         IO(
           decode[UpdateNovelContentMessagePlanner](str).getOrElse(
@@ -211,6 +202,15 @@ object Routes:
         ).flatMap { m =>
           m.fullPlan.map(_.asJson.toString)
         }
+      case "NovelsRankingMessage" =>
+        IO(
+          decode[NovelsRankingPlanner](str).getOrElse(
+            throw new Exception("Invalid JSON for NovelsRanking")
+          )
+        ).flatMap { m =>
+          m.fullPlan.map(_.asJson.toString)
+        }
+
       case "GetChapterRatingMessage" =>
         IO(
           decode[ChapterRatesPlanner](str).getOrElse(

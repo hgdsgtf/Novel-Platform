@@ -1,46 +1,53 @@
 import React from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import { render } from 'react-dom'
-import Homepage from './Pages/Homepage'
-import WriterHomepage from './Pages/WriterHomepage'
-import OtherHomepage from './Pages/OtherHomepage'
-import WriterRegister from 'Pages/WriterRegister'
-import WriterLogin from 'Pages/WriterLogin'
-import WriterForgotPassword from 'Pages/WriterForgotPassword'
-import WriterCreateNovel from 'Pages/WriterCreateNovel'
-import ReaderSearchNovel from 'Pages/ReaderSearchNovel'
-import ReaderMain from 'Pages/ReaderMain'
-import WriterMain from 'Pages/WriterMain'
-import WriterReadNovel from 'Pages/WriterReadNovel'
-import ReaderReadNovel from 'Pages/ReaderReadNovel'
-import WriterUpdateNovelContent from 'Pages/WriterUpdateNovelContent'
-import AuditorRegister from 'Pages/AuditorRegister'
-import AuditorLogin from 'Pages/AuditorLogin'
-import AuditorMain from 'Pages/AuditorMain'
-import WriterAddChapterContent from 'Pages/WriterAddChapter'
-import AuditorViewNovel from 'Pages/AuditorViewNovel'
-import ReaderAddMoney from 'Pages/ReaderAddMoney'
-import ResetPassword from 'Pages/ResetPassword'
-import WriterResetPassword from 'Pages/WriterResetPassword'
-import NovelComments from 'Pages/NovelComments'
-import AdminHomepage from 'Pages/AdminHomepage'
-import AdminRegister from 'Pages/AdminRegister'
-import AdminLogin from 'Pages/AdminLogin'
-import AdminForgotPassword from 'Pages/AdminForgotPassword'
-import AdminMain from 'Pages/AdminMain'
-import AdminManageWriter from 'Pages/AdminManageWriter'
-import AdminWriterProfile from 'Pages/AdminWriterProfile'
-import AdminManageAuditor from 'Pages/AdminManageAuditor'
-import AuditorHomepage from 'Pages/AuditorHomepage'
-import EditHomepage from 'Pages/EditHomepage'
-import NovelInfo from 'Pages/NovelInfo'
-import WriterNovelInfo from 'Pages/WriterNovelInfo'
-import Register from 'Pages/Register'
-import Login from 'Pages/Login'
-import ForgottenPassword from 'Pages/ForgottenPassword'
-import HomePageStyleList from 'Pages/HomePageStyleList'
-import EditorMain from 'Pages/EditorMain'
-
+import Homepage from 'Pages/Public/Homepage'
+import WriterHomepage from 'Pages/Writer/WriterHomepage'
+import OtherHomepage from 'Pages/Public/OtherHomepage'
+import WriterRegister from 'Pages/Writer/WriterRegister'
+import WriterLogin from 'Pages/Writer/WriterLogin'
+import WriterForgotPassword from 'Pages/Writer/WriterForgotPassword'
+import WriterCreateNovel from 'Pages/Writer/WriterCreateNovel'
+import ReaderSearchNovel from 'Pages/Reader/ReaderSearchNovel'
+import ReaderMain from 'Pages/Reader/ReaderMain'
+import WriterMain from 'Pages/Writer/WriterMain'
+import WriterReadNovel from 'Pages/Writer/WriterReadNovel'
+import ReaderReadNovel from 'Pages/Reader/ReaderReadNovel'
+import WriterUpdateNovelContent from 'Pages/Writer/WriterUpdateNovelContent'
+import AuditorRegister from 'Pages/Auditor/AuditorRegister'
+import AuditorLogin from 'Pages/Auditor/AuditorLogin'
+import AuditorMain from 'Pages/Auditor/AuditorMain'
+import WriterAddChapterContent from 'Pages/Writer/WriterAddChapter'
+import AuditorViewNovel from 'Pages/Auditor/AuditorViewNovel'
+import ReaderAddMoney from 'Pages/Reader/ReaderAddMoney'
+import ResetPassword from 'Pages/Public/ResetPassword'
+import WriterResetPassword from 'Pages/Writer/WriterResetPassword'
+import NovelComments from 'Pages/Comment/NovelComments'
+import AdminHomepage from 'Pages/Admin/AdminHomepage'
+import AdminRegister from 'Pages/Admin/AdminRegister'
+import AdminLogin from 'Pages/Admin/AdminLogin'
+import AdminForgotPassword from 'Pages/Admin/AdminForgotPassword'
+import AdminMain from 'Pages/Admin/AdminMain'
+import AdminManageWriter from 'Pages/Admin/AdminManageWriter'
+import AdminWriterProfile from 'Pages/Admin/AdminWriterProfile'
+import AdminManageAuditor from 'Pages/Admin/AdminManageAuditor'
+import AuditorHomepage from 'Pages/Auditor/AuditorHomepage'
+import EditHomepage from 'Pages/Editor/EditHomepage'
+import NovelInfo from 'Pages/Public/NovelInfo'
+import WriterNovelInfo from 'Pages/Writer/WriterNovelInfo'
+import Register from 'Pages/Public/Register'
+import Login from 'Pages/Public/Login'
+import ForgottenPassword from 'Pages/Public/ForgottenPassword'
+import HomePageStyleList from 'Pages/Public/HomePageStyleList'
+import EditorMain from 'Pages/Editor/EditorMain'
+import StyleList from 'Pages/Public/StyleList'
+import EditNovelInfo from 'Pages/Editor/EditNovelInfo'
+import EditCommentItem from 'Pages/Editor/EditCommentItem';
+import EditNovelComments from 'Pages/Editor/EditNovelComments';
+import EditReaderReadNovel from 'Pages/Editor/EditReaderReadNovel';
+import EditWriterNovelInfo from 'Pages/Editor/EditWriterNovelInfo';
+import EditWriterReadNovel from 'Pages/Editor/EditWriterReadNovel';
+import EditAuditorViewNovel from 'Pages/Editor/EditAuditorViewNovel';
 const Layout = () => (
     <HashRouter>
         <Switch>
@@ -83,6 +90,14 @@ const Layout = () => (
             <Route path="/writernovelinfo" exact component={WriterNovelInfo} />
             <Route path="/editormain" exact component={EditorMain} />
             <Route path="/homepagestylelist" exact component={HomePageStyleList} />
+            <Route path="/stylelist" exact component={StyleList} />
+            <Route path="/editnovelinfo" exact component={EditNovelInfo} />
+            <Route path="/editcommentitem" exact component={EditCommentItem} />
+            <Route path="/editnovelcomments" exact component={EditNovelComments} />
+            <Route path="/editreaderreadnovel" exact component={EditReaderReadNovel} />
+            <Route path="/editwriternovelinfo" exact component={EditWriterNovelInfo} />
+            <Route path="/editwriterreadnovel" exact component={EditWriterReadNovel} />
+            <Route path="/editauditorviewnovel" exact component={EditAuditorViewNovel} />
         </Switch>
     </HashRouter>
 )

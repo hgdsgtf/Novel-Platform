@@ -6,11 +6,11 @@
 
 :root {
     --button-color: #8eaaff;
-    --button-fontSize: 1.8rem;
+    --button-fontSize: 10rem;
     --button-width: 110%;
     --paragraph-fontSize: 1.8rem;
     --paragraph-color: #646464;
-    --header-fontSize: 3rem;
+    --header-fontSize: 5rem;
     --header-color: #9081f1;
 }
 

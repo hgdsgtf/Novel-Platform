@@ -33,6 +33,8 @@ case class ReaderMakeChapterRatePlanner(
       }
 
       updateRatingsAndCalculateAverage.flatMap { case (updatedRatings, averageRating) =>
+        val ratingsArrayString = "{" + updatedRatings.mkString(",") + "}"
+
         // Check if chapter rating exists
         val checkChapterRatingExistsIO = readDBRows(
           s"SELECT 1 FROM ${schemaName}.chapter_rating WHERE title = ? AND chapter = ?",
@@ -43,23 +45,15 @@ case class ReaderMakeChapterRatePlanner(
         checkChapterRatingExistsIO.flatMap { exists =>
           val updateOrInsertChapterRatingIO = if (exists) {
             writeDB(
-              s"UPDATE ${schemaName}.chapter_rating SET ratings = ARRAY[${updatedRatings.mkString(",")}]::integer[], rating = ${averageRating} WHERE title = ? AND chapter = ?",
-              List(
-                SqlParameter("String", title),
-                SqlParameter("Int", chapter.toString)
-              )
+              s"UPDATE ${schemaName}.chapter_rating SET ratings = '$ratingsArrayString'::integer[], rating = $averageRating WHERE title = '$title' AND chapter = $chapter",
+              List.empty
             )
           } else {
             writeDB(
-              s"INSERT INTO ${schemaName}.chapter_rating (title, chapter, ratings, rating) VALUES (?, ?, ARRAY[${updatedRatings.mkString(",")}]::integer[], ${averageRating})",
-              List(
-                SqlParameter("String", title),
-                SqlParameter("Int", chapter.toString)
-              )
+              s"INSERT INTO ${schemaName}.chapter_rating (title, chapter, ratings, rating) VALUES ('$title', $chapter, '$ratingsArrayString'::integer[], $averageRating)",
+              List.empty
             )
           }
-
-          // Insert into reader's chapter rating table
           val insertReaderRatingIO = writeDB(
             s"INSERT INTO ${schemaName}.reader_chapter_ratings (readername, noveltitle, chapter_id, rating) VALUES (?, ?, ?, ?)",
             List(

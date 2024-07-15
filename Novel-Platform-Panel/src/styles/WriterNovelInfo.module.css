@@ -1,0 +1,72 @@
+/* WriterNovelInfo.module.css */
+:root {
+    --button-color: #8eaaff; /* 保持按钮颜色不变 */
+    --button-fontSize: 1.6rem; /* 调整为合理的按钮字体大小 */
+    --button-width: 30%; /* 调整按钮宽度 */
+    --paragraph-fontSize: 1.8rem;
+    --paragraph-color: #646464;
+    --header-fontSize: 2.5rem; /* 调整为合理的标题字体大小 */
+    --header-color: #9081f1;
+}
+
+.writerNovelInfoContainer {
+    padding: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) no-repeat;
+    border-radius: 10px; /* 更圆润的边角 */
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--paragraph-color);
+    margin-bottom: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.subtitle {
+    font-size: var(--header-fontSize);
+    color: var(--paragraph-color);
+    margin-bottom: 0.5rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.chapterList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapterItem {
+    font-size: var(--header-fontSize);
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+}
+
+.writerAddButton,  .writerChapterButton {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--button-color); /* 保持按钮颜色 */
+    border-radius: 10px;
+    font-size: var(--button-fontSize);
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 可爱字体风格 */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    z-index: 10;
+}
+
+.writerAddButton:hover, .writerChapterButton:hover {
+    background-color: white;
+    color: #FF69B4;
+    z-index: 10;
+}
+.backButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8eaaff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font style */
+    cursor: pointer;
+    z-index: 10;
+}
